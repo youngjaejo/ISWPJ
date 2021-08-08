@@ -1,0 +1,661 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Parisienne&display=swap");
+
+.main-back {
+  /* background-color: beige; */
+  /* filter: blur(0.5px); */
+  margin-top: -1px;
+  pointer-events: none;
+}
+.background-image {
+  /* position: fixed;
+  display: block; */
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  min-height: 90vh;
+  background-image: url(../../IMG/mainback.jpg);
+  /* background-color: red; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* filter: blur(1.5px); */
+}
+
+.main-title {
+  /* background-color: red; */
+  margin-left: 50%;
+  padding-top: 20vh;
+}
+
+.text-main-page {
+  margin-top: 0.5rem;
+  width: 800px;
+  justify-content: start;
+  margin-left: 60px;
+  cursor: pointer;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: 3rem;
+  text-decoration: none;
+  color: brown;
+  /* background-color: aqua; */
+}
+
+.navbar-logo.c {
+  margin-top: 10px;
+  width: 600px;
+  /* background-color: aqua; */
+  cursor: pointer;
+  font-family: "Parisienne", cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 40px;
+  /* line-height: 70%; */
+}
+
+.main-logo {
+  margin-left: 25%;
+}
+
+/*------------Mission-------------------*/
+#mission {
+  height: 980px;
+  justify-content: center;
+  /* background: yellow; */
+}
+.mission-wrapper {
+  border: 2px solid gray;
+  border-radius: 10px;
+  position: absolute;
+  /* background-color: blue; */
+  display: grid;
+  margin-top: 150px;
+  margin-left: 5%;
+  width: 90%;
+  height: 70%;
+  /* grid-template-rows: 70px auto; */
+  grid-template-columns: minmax(550px, 760px) minmax(500px, auto);
+  grid-template-areas:
+    /* "title-mission title-vision" */ "mission-area  mission-img-area";
+}
+
+.title-mission {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 40px;
+}
+
+.mission-area {
+  padding: 40px;
+  font-family: "Cormorant Garamond", serif;
+  /* background-color: aqua; */
+  grid-area: mission-area;
+  height: 500px;
+  /* border: 1px solid #ccc; */
+}
+
+.mission-img-area {
+  margin-top: 50px;
+  margin-right: 20px;
+  position: absolute;
+  height: 500px;
+  /* background-color: green; */
+  grid-area: mission-img-area;
+  /* border: 1px solid #ccc; */
+}
+.mission-text {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+  color: black;
+}
+.missionOL li {
+  line-height: 2.5rem;
+}
+/* .img-mission {
+  position: absolute;
+  display: block;
+  min-width: 200px;
+  max-width: 780px;
+  height: 500px;
+  z-index: -1;
+  opacity: 0.3;
+  filter: blur(4px);
+}
+
+
+/*-----------------------------------------------*/
+
+/*------------Vision-------------------*/
+#vision {
+  height: 980px;
+  justify-content: center;
+  /* background: red; */
+}
+.vision-wrapper {
+  /* background-color: blue; */
+  border: 2px solid gray;
+  border-radius: 10px;
+  position: absolute;
+  /* background-color: blue; */
+  display: grid;
+  margin-top: 150px;
+  margin-left: 5%;
+  width: 90%;
+  height: 70%;
+  column-gap: 50px;
+  /* grid-template-rows: 70px auto; */
+  grid-template-columns: minmax(550px, 800px) minmax(500px, auto);
+  grid-template-areas:
+    /* "title-mission title-vision" */ "vision-img-area vision-area";
+}
+
+.title-vision {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 35px;
+}
+
+.vision-area {
+  position: absolute;
+  padding-top: 40px;
+  font-family: "Cormorant Garamond", serif;
+  /* background-color: violet; */
+  grid-area: vision-area;
+
+  /* border: 1px solid #ccc; */
+}
+
+.vision-img-area {
+  /* overflow: auto; */
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 40px;
+  font-family: "Cormorant Garamond", serif;
+  /* background-color: aqua; */
+  grid-area: vision-img-area;
+  height: 500px;
+  /* border: 1px solid #ccc; */
+}
+.vision-text {
+  /* background-color: aqua; */
+  margin-top: 30px;
+  /* margin-left: 10px; */
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+  color: black;
+}
+
+/* .img-vision {
+  position: absolute;
+  display: block;
+  min-width: 200px;
+  max-width: 900px;
+  height: 500px;
+  z-index: -1;
+  opacity: 0.4;
+  filter: blur(3px);
+} */
+/*-----------------------------------------------*/
+
+#target-projects {
+  height: 980px;
+  justify-content: center;
+  /* background: blue; */
+}
+
+/*--------------responsive testimony----------------------*/
+#member {
+  height: 1100px;
+}
+.testimonial-wapper {
+  /* margin-top: 60px; */
+  padding-top: 20px;
+}
+.carousel-root {
+  width: 90% !important;
+  margin: auto !important;
+  margin-top: 3% !important;
+}
+
+.carousel .slide {
+  background: #fff !important;
+  color: black;
+  height: 100%;
+}
+
+.carousel .slide img {
+  width: 175px !important;
+  height: 200px;
+  border-radius: 70%;
+}
+
+.myCarousel {
+  background: #fafafa;
+  margin-top: -6%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 1px solid #ddd;
+  height: 686px;
+}
+
+.carousel .control-dots {
+  padding-left: 5px !important;
+  outline: 0;
+  bottom: 5% !important;
+}
+
+.myCarousel h3 {
+  color: #222;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+.myCarousel h4 {
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 0;
+  font-weight: 500;
+  color: #787878;
+  font-size: 26px;
+}
+
+.myCarousel p {
+  margin-top: 30px;
+  font-weight: 100 !important;
+  line-height: 29px !important;
+  color: #222;
+  font-size: 25px;
+  font-family: sans-serif;
+  max-height: 67px;
+}
+
+.myCarousel p:before {
+  content: "“";
+  color: #aaa;
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+}
+
+.myCarousel p:after {
+  content: "”";
+  color: #aaa;
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+  line-height: 0;
+}
+
+.carousel .control-dots .dot {
+  box-shadow: none !important;
+  background: #454545 !important;
+  outline: 0;
+}
+
+.carousel.carousel-slider .control-arrow {
+  background: #000 !important;
+  height: 50px !important;
+  position: absolute;
+  top: 35% !important;
+}
+
+.App {
+  text-align: center;
+}
+
+@media only screen and (max-width: 790px) {
+  .carousel-root {
+    outline: 0;
+    width: 93% !important;
+    margin: auto !important;
+  }
+
+  .carousel.carousel-slider .control-arrow {
+    display: none !important;
+  }
+  .myCarousel {
+    background: #fafafa;
+    margin-top: -9%;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+    padding-bottom: 12.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 1px solid #ddd;
+    height: 850px;
+  }
+
+  .carousel .slide img {
+    width: 25vh !important;
+    height: 25vh !important;
+    border-radius: 50%;
+  }
+  .myCarousel h3 {
+    color: #222;
+    margin-top: 10px;
+    font-weight: 100;
+    letter-spacing: 0.2px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+  .myCarousel h4 {
+    text-transform: uppercase;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-weight: 500;
+    color: #787878;
+    font-size: 15px;
+  }
+
+  .myCarousel p {
+    margin-top: 10px;
+    font-weight: 100 !important;
+    line-height: 29px !important;
+    color: #222;
+    font-size: 13px;
+    font-family: sans-serif;
+    max-height: 67px;
+  }
+}
+
+/*-------------------------Target-----------*/
+.img-target {
+  position: absolute;
+  display: block;
+  margin-left: -20px;
+  margin-top: 120px;
+  min-width: 200px;
+  max-width: 1750px;
+  height: 700px;
+  z-index: -1;
+  opacity: 0.5;
+  filter: blur(2px);
+}
+
+.TP-wrapper {
+  /* margin-top: 30px; */
+
+  /* background-color: red; */
+  background-color: aqua;
+  margin: auto;
+  width: 90%;
+}
+
+.TP-Project-Bg {
+  border: 1px solid white;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 140px;
+  background-color: white;
+  opacity: 0.7;
+  width: 90%;
+  height: 320px;
+}
+.TP-title {
+  /* padding-top: 100px; */
+  font-family: "Cormorant Garamond", serif;
+  position: absolute;
+  /* background-color: yellow; */
+  margin-left: 30px;
+  margin-top: 160px;
+  width: 90%;
+}
+.TP-text {
+  margin-left: 65px;
+  margin-top: 220px;
+  position: absolute;
+  margin-right: 5%;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+  color: black;
+  /* background-color: red; */
+}
+
+.TP-title2 {
+  font-family: "Cormorant Garamond", serif;
+  position: absolute;
+  /* background-color: yellow; */
+  margin-top: 500px;
+  margin-left: 30px;
+  width: 20%;
+}
+.TP-Project-Bg2 {
+  border: 1px solid white;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 480px;
+  background-color: white;
+  opacity: 0.7;
+  width: 30%;
+  height: 325px;
+}
+.TP-text2 {
+  position: absolute;
+  margin-top: 570px;
+  margin-left: 65px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+  color: black;
+  /* background-color: red; */
+}
+/*--------------------------------------------*/
+#meet-the-team {
+  height: 980px;
+  /* background: red; */
+}
+/*-------------------------media-----------*/
+
+@media screen and (min-width: 279px) and (max-width: 1340px) {
+  .main-back {
+    /* background-color: beige; */
+    /* filter: blur(0.5px); */
+    margin-top: -1px;
+    pointer-events: none;
+  }
+  .background-image {
+    /* position: fixed;
+  display: block; */
+    z-index: 1;
+    width: 100%;
+    min-width: 10vh;
+    height: 100px;
+    min-height: 90vh;
+    background-image: url(../../IMG/mainback.jpg);
+    /* background-color: red; */
+    background-position: -24vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: blur(1.5px); */
+  }
+
+  .main-title {
+    /* background-color: red; */
+    margin-left: 0%;
+    padding-top: 15vh;
+  }
+
+  .text-main-page {
+    margin-top: 0.5rem;
+    width: 100%;
+    justify-content: start;
+    margin-left: 0px;
+    cursor: pointer;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: brown;
+    /* background-color: aqua; */
+    padding-left: 19vh;
+  }
+
+  .navbar-logo.c {
+    margin-top: 10px;
+    width: 100%;
+    /* background-color: yellow; */
+    cursor: pointer;
+    font-family: "Parisienne", cursive;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 0px;
+    /* line-height: 70%; */
+  }
+
+  /*---------------MISSION---------------------------------------------*/
+  #mission {
+    height: 1000px;
+    justify-content: center;
+    /* background: yellow; */
+  }
+  .mission-wrapper {
+    border: 2px solid gray;
+    border-radius: 10px;
+    position: absolute;
+    /* background-color: blue; */
+    display: grid;
+    margin-top: 90px;
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+
+    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "mission-img-area"
+      "mission-area";
+  }
+
+  .title-mission {
+    margin-top: 20px;
+    /* background-color: aqua; */
+    padding-left: 20px;
+    font-size: 27px;
+    font-family: "Cormorant Garamond", serif;
+  }
+
+  .mission-area {
+    padding: 0px;
+    font-family: "Cormorant Garamond", serif;
+    /* background-color: violet; */
+    grid-area: mission-area;
+    height: auto;
+    /* border: 1px solid #ccc; */
+  }
+  .missionImg {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  .mission-img-area {
+    margin-top: 0px;
+    margin-right: 20px;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    /* background-color: green; */
+    /* grid-area: mission-img-area; */
+
+    /* border: 1px solid #ccc; */
+  }
+  .mission-text {
+    margin-top: -15px;
+    margin-left: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Cormorant Garamond", serif;
+    color: black;
+    /* background-color: blue; */
+  }
+  .missionOL li {
+    line-height: 2rem;
+    padding-right: 20px;
+    /* background-color: red; */
+  }
+
+  /*------------Vision-------------------*/
+  #vision {
+    height: 700px;
+    justify-content: center;
+    /* background: red; */
+  }
+  .vision-wrapper {
+    border: 2px solid gray;
+    border-radius: 10px;
+    position: absolute;
+    /* background-color: blue; */
+    display: grid;
+    margin-top: 90px;
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "vision-img-area"
+      "vision-area";
+  }
+
+  .title-vision {
+    font-family: "Cormorant Garamond", serif;
+    padding-left: 10px;
+  }
+
+  .vision-area {
+    margin-top: 10px;
+    position: relative;
+    padding-top: 0px;
+    font-family: "Cormorant Garamond", serif;
+    /* background-color: violet; */
+    grid-area: vision-area;
+
+    /* border: 1px solid #ccc; */
+  }
+
+  .vision-img-area {
+    /* overflow: auto; */
+    position: relative;
+    margin-left: 0px;
+    margin-top: 0px;
+
+    grid-area: vision-img-area;
+    height: 300px;
+    /* border: 1px solid #ccc; */
+  }
+  .vision-text {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Cormorant Garamond", serif;
+    color: black;
+  }
+  .vision-text.p {
+    margin-top: -20px;
+    padding-left: 17px;
+    padding-right: 10px;
+    line-height: 2rem;
+  }
+  .visionImg {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+}

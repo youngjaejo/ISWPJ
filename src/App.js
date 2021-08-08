@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import MainNavbar from "./Narbar/MainNavbar";
+import Main from "./pages/main/main";
+import Footer from "./pages/footer/footer";
+import WhoWeAre from "./pages/main/WhoWeAre/WhoWeAre";
+import WhatWeDo from "./pages/main/WhatWeDo/WhatWeDo";
+import TargetProject from "./pages/main/WhatWeDo/TargetProject";
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      class: [],
+      sidebar: false,
+    };
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  onChangeSidebar(flag) {
+    this.setState({
+      sidebar: flag,
+    });
+  }
+  render() {
+    return (
+      <div>
+        <Router>
+          <MainNavbar />
+          <Main />
+          <Switch>
+            <Route path="/WhatWeDo/target-projects">
+              <WhatWeDo id="target-projects" />
+            </Route>
+            <Route path="/whoweare/mission">
+              <WhoWeAre id="mission" />
+            </Route>
+            <Route path="/whoweare/vision">
+              <WhoWeAre id="vision" />
+            </Route>
+            <Route path="/whoweare/MeetTheTeam">
+              <WhoWeAre id="member" />
+            </Route>
+          </Switch>
+          <Footer />
+        </Router>
+      </div>
+      // </div>
+    );
+  }
 }
 
 export default App;
