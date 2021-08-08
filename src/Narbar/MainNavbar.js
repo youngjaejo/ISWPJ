@@ -64,7 +64,7 @@ class MainNavbar extends Component {
             <div className="dropdown">
               <li>
                 <p className="nav-links">Who We Are</p>
-                <div class="dropdown-content">
+                <div className="dropdown-content">
                   {NavBarItems_WhoWeAre.map((item, index) => {
                     return (
                       <a
@@ -84,7 +84,7 @@ class MainNavbar extends Component {
             <div className="dropdown">
               <li>
                 <p className="nav-links">What We Do</p>
-                <div class="dropdown-content">
+                <div className="dropdown-content">
                   {WhatWeCanDo_NavItems.map((item, index) => {
                     return (
                       <a
