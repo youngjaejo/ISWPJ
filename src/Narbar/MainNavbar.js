@@ -66,7 +66,7 @@ class MainNavbar extends Component {
           <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
             <div class="dropdown">
               <li>
-                <a className="nav-links">Who We Are</a>
+                <p className="nav-links">Who We Are</p>
                 <div class="dropdown-content">
                   {NavBarItems_WhoWeAre.map((item, index) => {
                     return (
@@ -86,7 +86,7 @@ class MainNavbar extends Component {
             </div>
             <div class="dropdown">
               <li>
-                <a className="nav-links">What We Do</a>
+                <p className="nav-links">What We Do</p>
                 <div class="dropdown-content">
                   {WhatWeCanDo_NavItems.map((item, index) => {
                     return (
@@ -106,7 +106,7 @@ class MainNavbar extends Component {
             </div>
             <div class="dropdown">
               <li>
-                <a className="nav-links">What You Can Do</a>
+                <p className="nav-links">What You Can Do</p>
                 <div class="dropdown-content">
                   <a href="#1">Target Project &#38; Areas</a>
                 </div>
