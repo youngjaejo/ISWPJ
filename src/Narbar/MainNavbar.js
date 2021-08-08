@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-import { Navbar, Container, Nav, NavDropdown, NavItem } from "react-bootstrap";
-import Logo from "../IMG/imgOnlyNoBG.png";
 import { NavBarItems_WhoWeAre, WhatWeCanDo_NavItems } from "./NavBarItems";
 import "./Navbar.css";
-import "../pages/main/pages.css";
 import logo from "../IMG/imgOnlyNoBG.png";
 class MainNavbar extends Component {
   constructor(props) {

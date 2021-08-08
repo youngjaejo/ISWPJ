@@ -18,9 +18,6 @@ class Main extends Component {
                   -Dr. Maria Montessori
                 </p>
               </p>
-              {/* <div className="main-logo">
-                <img src={logo} alt="logo" width="300px" height="300px" />
-              </div> */}
             </div>
           </div>
         </div>

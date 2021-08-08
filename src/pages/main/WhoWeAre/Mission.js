@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "../pages.css";
-
-import vision from "../../../IMG/vision.jpg";
 import Target from "../../../IMG/Target1.jpg";
 class Mission extends Component {
   constructor(props) {

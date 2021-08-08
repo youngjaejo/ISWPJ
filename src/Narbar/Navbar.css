@@ -88,14 +88,6 @@
   display: none;
 }
 
-/* dropdown */
-.dropbtn {
-  /* background: none;
-  color: black;
-  font: 1.2rem;
-  border: none; */
-}
-
 .dropdown {
   position: absolute;
   display: inline-block;

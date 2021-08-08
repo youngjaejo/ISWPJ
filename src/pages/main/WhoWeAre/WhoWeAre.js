@@ -4,7 +4,6 @@ import Mission from "./Mission";
 import Vision from "./Vision";
 import Member from "././Testmonial/Member";
 import { scroller } from "react-scroll";
-import { Redirect } from "react-router-dom";
 class WhoWeAre extends Component {
   constructor(props) {
     super(props);
