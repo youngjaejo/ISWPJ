@@ -61,8 +61,8 @@ class MainNavbar extends Component {
             ></i>
           </div>
           <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
-            <li>
-              <div class="dropdown">
+            <div className="dropdown">
+              <li>
                 <p className="nav-links">Who We Are</p>
                 <div class="dropdown-content">
                   {NavBarItems_WhoWeAre.map((item, index) => {
@@ -79,11 +79,10 @@ class MainNavbar extends Component {
                     );
                   })}
                 </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="dropdown">
+              </li>
+            </div>
+            <div className="dropdown">
+              <li>
                 <p className="nav-links">What We Do</p>
                 <div class="dropdown-content">
                   {WhatWeCanDo_NavItems.map((item, index) => {
@@ -100,16 +99,16 @@ class MainNavbar extends Component {
                     );
                   })}
                 </div>
-              </div>
-            </li>
-            <li>
+              </li>
+            </div>
+            {/* <li>
               <div class="dropdown">
                 <p className="nav-links">What You Can Do</p>
                 <div class="dropdown-content">
                   <a href="#1">Target Project &#38; Areas</a>
                 </div>
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
