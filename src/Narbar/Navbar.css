@@ -118,7 +118,7 @@
   position: absolute;
 }
 
-@media screen and (min-width: 359px) and (max-width: 1340px) {
+@media screen and (min-width: 319px) and (max-width: 1340px) {
   .nav-menu {
     display: flex;
     flex-direction: column;
