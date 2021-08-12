@@ -101,6 +101,26 @@ class MainNavbar extends Component {
                 </div>
               </li>
             </div>
+            <div className="dropdown">
+              <li>
+                <p className="nav-links">What You Can Do</p>
+                <div className="dropdown-content">
+                  {WhatWeCanDo_NavItems.map((item, index) => {
+                    return (
+                      <a
+                        href={
+                          !window.location.href.includes(item.url)
+                            ? item.param1
+                            : item.param2
+                        }
+                      >
+                        {item.name}
+                      </a>
+                    );
+                  })}
+                </div>
+              </li>
+            </div>
             {/* <li>
               <div class="dropdown">
                 <p className="nav-links">What You Can Do</p>

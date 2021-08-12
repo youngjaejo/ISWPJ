@@ -1,13 +1,136 @@
 .footer-wrapper {
   background-color: rgb(46, 45, 45);
   width: 100%;
-  height: 100px;
+  height: 100%;
 }
 .footer-Contents {
-  position: absolute;
-  width: 40%;
-  margin-top: 30px;
-  border: 3px solid #73ad21;
-  margin-left: 30%;
-  background-color: blanchedalmond;
+  position: relative;
+  width: 70%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  height: auto;
+  top: 0px;
+  column-gap: 20px;
+  row-gap: 30px;
+  margin-left: 20%;
+  /* background-color: blanchedalmond; */
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "footer1 footer1"
+    "footer2 footer3";
+}
+.footer1 {
+  /* overflow: auto; */
+  font-family: "Cormorant Garamond", serif;
+  height: auto;
+  /* background-color: aqua; */
+  grid-area: footer1;
+}
+.footer1.title {
+  font-family: "Parisienne", cursive;
+  color: white;
+}
+.footer1 li {
+  list-style-type: none;
+  color: white;
+  font-size: 25px;
+}
+.footer2 {
+  font-family: "Cormorant Garamond", serif;
+  /* background-color: violet; */
+  grid-area: footer2;
+}
+
+.footer2 li {
+  list-style-type: none;
+  color: white;
+  font-size: 25px;
+}
+
+.footer3 {
+  font-family: "Cormorant Garamond", serif;
+  /* background-color: violet; */
+  grid-area: footer3;
+}
+
+.footer3 li {
+  list-style-type: none;
+  color: white;
+  font-size: 25px;
+}
+@media screen and (min-width: 279px) and (max-width: 1140px) {
+  .footer-Contents {
+    position: relative;
+    width: 60%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: auto;
+    /* top: 0px; */
+    column-gap: 20px;
+    row-gap: 30px;
+    margin-left: 10%;
+    /* margin-right: 20px; */
+    /* background-color: blanchedalmond; */
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "footer1"
+      "footer2"
+      "footer3";
+  }
+  .footer1 {
+    /* overflow: auto; */
+    /* position: relative; */
+    font-family: "Cormorant Garamond", serif;
+    height: auto;
+    /* background-color: aqua; */
+    grid-area: footer1;
+    width: 300px;
+  }
+  .footer1.title {
+    font-family: "Parisienne", cursive;
+    color: white;
+    width: auto;
+    /* background-color: red; */
+    font-size: 25px;
+  }
+  .footer1 li {
+    list-style-type: none;
+    color: white;
+    font-size: 20px;
+    /* background-color: green; */
+    /* width: auto; */
+  }
+  .footer2 {
+    font-family: "Cormorant Garamond", serif;
+    /* background-color: violet; */
+    grid-area: footer2;
+  }
+
+  .footer2 li {
+    list-style-type: none;
+    color: white;
+    font-size: 20px;
+  }
+
+  .footer3 {
+    font-family: "Cormorant Garamond", serif;
+    /* background-color: violet; */
+    grid-area: footer3;
+    width: auto;
+    display: inline-block;
+    /* background-color: aqua; */
+  }
+
+  .footer3 li {
+    /* display: inline; */
+    list-style-type: none;
+    color: white;
+    font-size: 20px;
+
+    /* background-color: blue; */
+  }
 }

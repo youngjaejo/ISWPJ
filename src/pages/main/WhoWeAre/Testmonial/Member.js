@@ -27,7 +27,7 @@ class Member extends Component {
             <img src={Gelli} alt="gelli" />
             <div className="myCarousel">
               <h3>Angelica Rose G. Turingan-Jo</h3>
-              <h4>Founder&#38;Chairwoman Project</h4>
+              <h4>Founder &#38; Chairwoman</h4>
               <p>
                 I started It's A Small World Project as a way of honoring my
                 father and grandfather's legacy of uplifting those who are
@@ -49,8 +49,8 @@ class Member extends Component {
               <h3>Cheryl Moana Marie Aquino</h3>
               <h4>Liaisons</h4>
               <p>
-                I've always dreamt of a WORLD that CHILDREN can FEARLESSLY
-                CONQUER. Through proper rearing, which IASWP advocates, they can
+                I've always dreamt of a world that children can fearlessly
+                conquer. Through proper rearing, which IASWP advocates, they can
                 face the world confidently and turn their dreams into reality.
                 IASWP is an avenue where I can personally and directly take part
                 in making my dream world.
@@ -80,7 +80,7 @@ class Member extends Component {
           <div>
             <img src={Beth} alt="Beth" />
             <div className="myCarousel">
-              <h3>Maria Beth Saida Manlapaz</h3>
+              <h3>Maria Beth Saida Reyes-Manlapaz</h3>
               <h4>Project Planning &#38; Implementation</h4>
               <p>
                 When I was in high school, I had a chance to participate in one
@@ -105,7 +105,7 @@ class Member extends Component {
           <div>
             <img src={Vina} alt="Vina" />
             <div className="myCarousel">
-              <h3>Vina Sision</h3>
+              <h3>Vina Sison</h3>
               <h4>Marketing</h4>
               <p></p>
             </div>

@@ -48,7 +48,8 @@ class TargetProject extends Component {
           <div className="TP-text2">
             <li>Indigenous communities</li>
             <li>Refugee Camps</li>
-            <li>Prisons Remote areas</li>
+            <li>Prisons</li>
+            <li>Remote areas</li>
             <li>Highly underdeveloped sectors</li>
             <li>Urban poor</li>
             <li>
