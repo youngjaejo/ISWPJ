@@ -24,11 +24,11 @@ class Footer extends Component {
           </div>
           <div className="footer2">
             <li>EIN: 86-3480021</li>
-            <li>Phone: 510-396-1955</li>
+            <li>Phone: 510-514-9216</li>
           </div>
           <div className="footer3">
             <li>Email: smallworldprojectbyarbitots@gmail.com</li>
-            <li>Powered By Yongjae Jo</li>
+            <li>Powered By Youngjae Jo</li>
           </div>
         </div>
       </div>
