@@ -10,9 +10,6 @@ class Mission extends Component {
     return (
       <div className="mission-wrapper">
         <div className="mission-area">
-          {/* <div className="img-mission">
-            <img src={mission} alt="mission" width="100%" height="100%" />
-          </div> */}
           <div className="title-mission">
             <p>MISSION</p>
           </div>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavBarItems_WhoWeAre, WhatWeCanDo_NavItems } from "./NavBarItems";
+import { NavBarItems_WhoWeAre, WhatWeDo_NavItems } from "./NavBarItems";
 import "./Navbar.css";
 import logo from "../IMG/imgOnlyNoBG.png";
 class MainNavbar extends Component {
@@ -85,7 +85,7 @@ class MainNavbar extends Component {
               <li>
                 <p className="nav-links">What We Do</p>
                 <div className="dropdown-content">
-                  {WhatWeCanDo_NavItems.map((item, index) => {
+                  {WhatWeDo_NavItems.map((item, index) => {
                     return (
                       <a
                         href={
@@ -101,24 +101,11 @@ class MainNavbar extends Component {
                 </div>
               </li>
             </div>
-            <div className="dropdown">
+            <div className="regularMenu">
               <li>
-                <p className="nav-links">What You Can Do</p>
-                <div className="dropdown-content">
-                  {WhatWeCanDo_NavItems.map((item, index) => {
-                    return (
-                      <a
-                        href={
-                          !window.location.href.includes(item.url)
-                            ? item.param1
-                            : item.param2
-                        }
-                      >
-                        {item.name}
-                      </a>
-                    );
-                  })}
-                </div>
+                <a href="/whatyoucando" className="nav-links">
+                  What You Can Do
+                </a>
               </li>
             </div>
             {/* <li>

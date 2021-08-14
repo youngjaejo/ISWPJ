@@ -29,9 +29,9 @@
 
 .text-main-page {
   margin-top: 0.5rem;
-  width: 800px;
-  justify-content: start;
-  margin-left: 60px;
+  width: 100%;
+  /* justify-content: start; */
+  text-align: center;
   cursor: pointer;
   font-family: "Cormorant Garamond", serif;
   font-weight: bold;
@@ -43,14 +43,14 @@
 
 .navbar-logo.c {
   margin-top: 10px;
-  width: 600px;
-  /* background-color: aqua; */
+  width: 100%;
+  /* background-color: red; */
   cursor: pointer;
   font-family: "Parisienne", cursive;
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   /* line-height: 70%; */
 }
 
@@ -73,11 +73,10 @@
   margin-top: 150px;
   margin-left: 5%;
   width: 90%;
-  height: 70%;
+  height: auto;
   /* grid-template-rows: 70px auto; */
-  grid-template-columns: minmax(550px, 760px) minmax(500px, auto);
-  grid-template-areas:
-    /* "title-mission title-vision" */ "mission-area  mission-img-area";
+  grid-template-columns: auto auto;
+  grid-template-areas: "mission-area  mission-img-area";
 }
 
 .title-mission {
@@ -89,19 +88,25 @@
   padding: 40px;
   font-family: "Cormorant Garamond", serif;
   /* background-color: aqua; */
-  grid-area: mission-area;
-  height: 500px;
+  border-radius: 7px;
+  height: auto;
+  width: 100%;
   /* border: 1px solid #ccc; */
 }
 
 .mission-img-area {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   margin-right: 20px;
-  position: absolute;
-  height: 500px;
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
   /* background-color: green; */
   grid-area: mission-img-area;
   /* border: 1px solid #ccc; */
+}
+.missionImg {
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
 }
 .mission-text {
   margin-top: 20px;
@@ -144,10 +149,10 @@
   margin-top: 150px;
   margin-left: 5%;
   width: 90%;
-  height: 70%;
+  height: auto;
   column-gap: 50px;
   /* grid-template-rows: 70px auto; */
-  grid-template-columns: minmax(550px, 800px) minmax(500px, auto);
+  grid-template-columns: auto auto;
   grid-template-areas:
     /* "title-mission title-vision" */ "vision-img-area vision-area";
 }
@@ -158,7 +163,6 @@
 }
 
 .vision-area {
-  position: absolute;
   padding-top: 40px;
   font-family: "Cormorant Garamond", serif;
   /* background-color: violet; */
@@ -168,10 +172,6 @@
 }
 
 .vision-img-area {
-  /* overflow: auto; */
-  position: absolute;
-  margin-left: 20px;
-  margin-top: 40px;
   font-family: "Cormorant Garamond", serif;
   /* background-color: aqua; */
   grid-area: vision-img-area;
@@ -181,13 +181,16 @@
 .vision-text {
   /* background-color: aqua; */
   margin-top: 30px;
-  /* margin-left: 10px; */
+  padding-right: 10px;
   font-size: 25px;
   font-weight: bold;
   font-family: "Cormorant Garamond", serif;
   color: black;
 }
-
+.visionImg {
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+}
 /* .img-vision {
   position: absolute;
   display: block;
@@ -310,6 +313,9 @@
 }
 
 @media only screen and (max-width: 790px) {
+  #member {
+    height: 1200px;
+  }
   .carousel-root {
     outline: 0;
     width: 93% !important;
@@ -374,29 +380,31 @@
   justify-content: center;
   /* background: blue; */
 }
+.TP-wrapper {
+  /* background-color: aqua; */
+  /* margin-left: 5%; */
+  margin-right: 5%;
+  margin-top: 170px;
+  /* padding-top: 5px; */
+  width: 100%;
+  /* height: 680px; */
+  background-color: blue;
+}
 
 .img-target {
   position: absolute;
-  display: block;
-  margin-left: -20px;
+  /* display: block; */
+  margin-left: 2%;
+  /* margin-right: 100px; */
   margin-top: -10px;
-  /* min-width: 200px; */
-  /* max-width: 1750px; */
-  height: 780px;
   z-index: -1;
   opacity: 0.6;
   filter: blur(2px);
-  width: 97%;
+  width: 95%;
+  /* background-color: aqua; */
 }
 .img-target.img {
-  height: 110%;
-}
-.TP-wrapper {
-  /* background-color: aqua; */
-  margin-left: 100px;
-  margin-top: 170px;
-  /* padding-top: 5px; */
-  width: 90%;
+  height: 880px;
 }
 
 .TP-Project-Bg {
@@ -404,6 +412,7 @@
   border-radius: 5px;
   position: relative;
   top: 50px;
+  margin-left: 5%;
   /* padding-top: 100px; */
   background-color: white;
   opacity: 0.7;
@@ -450,6 +459,7 @@
   opacity: 0.7;
   width: 30%;
   height: auto;
+  margin-left: 5%;
 }
 .TP-text2 {
   margin-left: 65px;
@@ -464,9 +474,242 @@
   height: 980px;
   /* background: red; */
 }
-/*-------------------------media-----------*/
 
-@media screen and (min-width: 279px) and (max-width: 1140px) {
+/*-------------------------whatyoucando--------------*/
+#whatyoucando {
+  height: 1000px;
+  background-color: blue;
+}
+/*-------------------------media---------------------*/
+@media screen and (min-width: 801px) and (max-width: 1300px) {
+  /*---------------MISSION---------------------------------------------*/
+  #mission {
+    height: 700px;
+    justify-content: center;
+    /* background: yellow; */
+  }
+  .mission-wrapper {
+    border: 2px solid gray;
+    border-radius: 10px;
+    position: absolute;
+    /* background-color: blue; */
+    display: grid;
+    margin-top: 150px;
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+    /* grid-template-rows: 70px auto; */
+    grid-template-columns: auto auto;
+    grid-template-areas:
+    /* "title-mission title-vision" */ "mission-area  mission-img-area";
+  }
+
+  .title-mission {
+    margin-top: 20px;
+    /* background-color: aqua; */
+    padding-left: 20px;
+    font-size: 27px;
+    font-family: "Cormorant Garamond", serif;
+  }
+
+  .mission-area {
+    padding: 0px;
+    font-family: "Cormorant Garamond", serif;
+    /* background-color: violet; */
+    grid-area: mission-area;
+    height: auto;
+    /* border: 1px solid #ccc; */
+  }
+  .missionImg {
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  .mission-img-area {
+    margin-top: 0px;
+    margin-right: 20px;
+    position: relative;
+    height: auto;
+    width: 100%;
+    /* background-color: green; */
+    /* grid-area: mission-img-area; */
+
+    /* border: 1px solid #ccc; */
+  }
+  .mission-text {
+    margin-top: -15px;
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Cormorant Garamond", serif;
+    color: black;
+    /* background-color: blue; */
+  }
+  .missionOL li {
+    line-height: 2rem;
+    padding-right: 20px;
+    /* background-color: red; */
+  }
+
+  /*------------Vision-------------------*/
+  #vision {
+    height: 700px;
+    justify-content: center;
+    /* background: red; */
+  }
+  .vision-wrapper {
+    /* background-color: blue; */
+    border: 2px solid gray;
+    border-radius: 10px;
+    position: absolute;
+    /* background-color: blue; */
+    display: grid;
+    margin-top: 150px;
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+    column-gap: 50px;
+    /* grid-template-rows: 70px auto; */
+    grid-template-columns: auto auto;
+    grid-template-areas: "vision-img-area vision-area";
+  }
+
+  .title-vision {
+    font-family: "Cormorant Garamond", serif;
+    padding-left: 10px;
+  }
+
+  .vision-area {
+    margin-top: 10px;
+    position: relative;
+    padding-top: 0px;
+    font-family: "Cormorant Garamond", serif;
+    /* background-color: violet; */
+    grid-area: vision-area;
+
+    /* border: 1px solid #ccc; */
+  }
+
+  .vision-img-area {
+    /* overflow: auto; */
+    position: relative;
+    margin-left: 0px;
+    margin-top: 0px;
+
+    grid-area: vision-img-area;
+    height: 300px;
+    /* border: 1px solid #ccc; */
+  }
+  .vision-text {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Cormorant Garamond", serif;
+    color: black;
+  }
+  .vision-text.p {
+    margin-top: -20px;
+    padding-left: 17px;
+    padding-right: 10px;
+    line-height: 2rem;
+  }
+  .visionImg {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  /*-------------------------Target-----------*/
+  .TP-wrapper {
+    /* background-color: aqua; */
+    margin: auto;
+    width: 90%;
+  }
+
+  .img-target {
+    position: absolute;
+    display: block;
+    /* margin-left: -20px; */
+    margin-top: -20px;
+    /* min-width: 200px; */
+    /* max-width: 1750px; */
+    height: 900px;
+    z-index: -1;
+    opacity: 0.6;
+    filter: blur(2px);
+    width: 95%;
+
+    background-color: aqua;
+  }
+  .img-target.img {
+    height: 680px;
+    margin-left: 3px;
+  }
+
+  .TP-Project-Bg {
+    border: 1px solid white;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 140px;
+    margin-left: 7%;
+    /* padding-top: 100px; */
+    background-color: white;
+    opacity: 0.7;
+    width: 90%;
+    height: auto;
+  }
+  .TP-title {
+    font-family: "Cormorant Garamond", serif;
+    /* background-color: yellow; */
+    margin-left: 10px;
+    width: 90%;
+  }
+  .TP-title p {
+    font-size: 30px;
+  }
+  .TP-text {
+    margin-left: 65px;
+    margin-right: 5%;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Cormorant Garamond", serif;
+    color: black;
+    /* background-color: red; */
+  }
+  .TP-text li {
+    margin-left: -5%;
+  }
+  .TP-title2 {
+    font-family: "Cormorant Garamond", serif;
+    /* background-color: yellow; */
+    margin-left: 10px;
+    width: 90%;
+  }
+  .TP-title2 p {
+    font-size: 30px;
+  }
+  .TP-text2 li {
+    margin-left: -5%;
+  }
+  .TP-Project-Bg2 {
+    border: 1px solid white;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 7%;
+    margin-top: 10px;
+    background-color: white;
+    opacity: 0.7;
+    width: 90%;
+    height: auto;
+  }
+  .TP-text2 {
+    margin-left: 65px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Cormorant Garamond", serif;
+    color: black;
+    /* background-color: red; */
+  }
+}
+@media screen and (min-width: 279px) and (max-width: 800px) {
   .main-back {
     /* background-color: beige; */
     /* filter: blur(0.5px); */
@@ -674,10 +917,10 @@
     z-index: -1;
     opacity: 0.6;
     filter: blur(2px);
-    width: 100%;
+    width: 94%;
   }
   .img-target.img {
-    height: 110%;
+    height: 780px;
     margin-left: 3px;
   }
   .TP-wrapper {
@@ -691,6 +934,7 @@
     border-radius: 5px;
     position: relative;
     margin-top: 140px;
+    margin-left: 7%;
     /* padding-top: 100px; */
     background-color: white;
     opacity: 0.7;
@@ -735,6 +979,7 @@
     border-radius: 5px;
     position: relative;
     margin-top: 10px;
+    margin-left: 7%;
     background-color: white;
     opacity: 0.7;
     width: 90%;

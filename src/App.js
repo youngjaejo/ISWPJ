@@ -5,6 +5,7 @@ import Main from "./pages/main/main";
 import Footer from "./pages/footer/footer";
 import WhoWeAre from "./pages/main/WhoWeAre/WhoWeAre";
 import WhatWeDo from "./pages/main/WhatWeDo/WhatWeDo";
+import WhatYouCanDo from "./pages/main/WhatYouCanDo/WhatYouCanDo";
 import TargetProject from "./pages/main/WhatWeDo/TargetProject";
 class App extends Component {
   constructor(props) {
@@ -38,6 +39,9 @@ class App extends Component {
             </Route>
             <Route path="/whoweare/MeetTheTeam">
               <WhoWeAre id="member" />
+            </Route>
+            <Route path="/whatyoucando">
+              <WhatYouCanDo id="whatyoucando" />
             </Route>
           </Switch>
           <Footer />

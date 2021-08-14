@@ -19,7 +19,7 @@ export const NavBarItems_WhoWeAre = [
   },
 ];
 
-export const WhatWeCanDo_NavItems = [
+export const WhatWeDo_NavItems = [
   {
     url: "http://localhost:3000/WhatWeDo",
     param1: "/WhatWeDo/target-projects",

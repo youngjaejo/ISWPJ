@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Parisienne&display=swap");
 .NavbarItems {
   position: fixed;
-  /* background-color: red; */
+  /* background-color: blue; */
   height: 70px;
   display: flex;
   justify-content: center;
@@ -91,7 +91,10 @@
 .dropdown {
   display: inline-block;
 }
-
+.regularMenu {
+  display: inline-block;
+  margin-top: 8px;
+}
 .dropdown-content {
   display: none;
   position: relative;
@@ -126,7 +129,7 @@
     /* height: 100px; */
     position: absolute;
     top: 55px;
-    left: -100%;
+    left: -110%;
     opacity: 1;
     transition: all 0.5s ease;
     margin-top: 12px;

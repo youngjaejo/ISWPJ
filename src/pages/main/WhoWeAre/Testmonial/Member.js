@@ -5,6 +5,7 @@ import MEM2 from "../../../../IMG/salazar.png";
 import Gelli from "../../../../IMG/gelli.png";
 import Beth from "../../../../IMG/beth.png";
 import Vina from "../../../../IMG/Vina.png";
+import Jihoana from "../../../../IMG/jihoana.png";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 class Member extends Component {
@@ -14,103 +15,145 @@ class Member extends Component {
   }
   render() {
     return (
-      <div className="testimonial-wapper">
-        <Carousel
-          showArrows={true}
-          infiniteLoop={true}
-          showThumbs={false}
-          showStatus={false}
-          autoPlay={true}
-          interval={60000}
-        >
-          <div>
-            <img src={Gelli} alt="gelli" />
-            <div className="myCarousel">
-              <h3>Angelica Rose G. Turingan-Jo</h3>
-              <h4>Founder &#38; Chairwoman</h4>
-              <p>
-                I started It's A Small World Project as a way of honoring my
-                father and grandfather's legacy of uplifting those who are
-                underserved. As I came to learn more about Montessori pedagogy
-                through work and studies, I became more and more convinced that
-                this was the way I could and wanted to change the world - to
-                give every disadvantaged child the best possible foundation in
-                early childhood in order that he/she may grow into his/her
-                fullest potential and become the steward of the Earth as God
-                intended man to be. To me, this work will be my greatest
-                manifestation of faith, gratitude and love.
-              </p>
+      <div>
+        <div style={{ width: "100%", textAlign: "center" }}>
+          <h1>Board Of Directors</h1>
+        </div>
+        <div className="testimonial-wapper">
+          <Carousel
+            showArrows={true}
+            infiniteLoop={true}
+            showThumbs={false}
+            showStatus={false}
+            autoPlay={true}
+            interval={60000}
+          >
+            <div>
+              <img src={Gelli} alt="gelli" />
+              <div className="myCarousel">
+                <h3>Angelica Rose G. Turingan-Jo</h3>
+                <h4>Founder &#38; Chairwoman</h4>
+                <p>
+                  I started It's A Small World Project as a way of honoring my
+                  father and grandfather's legacy of uplifting those who are
+                  underserved. As I came to learn more about Montessori pedagogy
+                  through work and studies, I became more and more convinced
+                  that this was the way I could and wanted to change the world -
+                  to give every disadvantaged child the best possible foundation
+                  in early childhood in order that he/she may grow into his/her
+                  fullest potential and become the steward of the Earth as God
+                  intended man to be. To me, this work will be my greatest
+                  manifestation of faith, gratitude and love.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div>
-            <img src={cheng} alt="cheng" />
-            <div className="myCarousel">
-              <h3>Cheryl Moana Marie Aquino</h3>
-              <h4>Liaisons</h4>
-              <p>
-                I've always dreamt of a world that children can fearlessly
-                conquer. Through proper rearing, which IASWP advocates, they can
-                face the world confidently and turn their dreams into reality.
-                IASWP is an avenue where I can personally and directly take part
-                in making my dream world.
-              </p>
+            <div>
+              <img src={cheng} alt="cheng" />
+              <div className="myCarousel">
+                <h3>Cheryl Moana Marie Aquino</h3>
+                <h4>Liaisons</h4>
+                <p>
+                  I've always dreamt of a world that children can fearlessly
+                  conquer. Through proper rearing, which IASWP advocates, they
+                  can face the world confidently and turn their dreams into
+                  reality. IASWP is an avenue where I can personally and
+                  directly take part in making my dream world.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div>
-            <img src={MEM2} alt="MEM2" />
-            <div className="myCarousel">
-              <h3>Christine Ruth Salazar</h3>
-              <h4>Research &#38; Project Management</h4>
-              <p>
-                I believe that education is that crucial element that enables
-                every individual to reach their full potential. To allow every
-                child to reach their full potential, we need a child-centered
-                model of education that fosters individual's independence and
-                self-growth, and that's what Montessori education is all about.
-                I am extremely pleased with the advocacy of It's A Small World
-                Project as it advocates the accessibility of Montessori
-                education to marginalized and disenfranchised communities. I
-                hope to contribute to improving the lives of these communities
-                by supporting the endeavors of It's A Small World Project
-              </p>
+            <div>
+              <img src={MEM2} alt="MEM2" />
+              <div className="myCarousel">
+                <h3>Christine Ruth Salazar</h3>
+                <h4>Research &#38; Project Management</h4>
+                <p>
+                  I believe that education is that crucial element that enables
+                  every individual to reach their full potential. To allow every
+                  child to reach their full potential, we need a child-centered
+                  model of education that fosters individual's independence and
+                  self-growth, and that's what Montessori education is all
+                  about. I am extremely pleased with the advocacy of It's A
+                  Small World Project as it advocates the accessibility of
+                  Montessori education to marginalized and disenfranchised
+                  communities. I hope to contribute to improving the lives of
+                  these communities by supporting the endeavors of It's A Small
+                  World Project
+                </p>
+              </div>
             </div>
-          </div>
-          <div>
-            <img src={Beth} alt="Beth" />
-            <div className="myCarousel">
-              <h3>Maria Beth Saida Reyes-Manlapaz</h3>
-              <h4>Project Planning &#38; Implementation</h4>
-              <p>
-                When I was in high school, I had a chance to participate in one
-                of our school organization’s activity where we visited a home
-                for special children. Since then, I felt and unexplainable and
-                deep feeling of concern for children and I envision of having or
-                being part of a special facility for them… Several years passed,
-                my priorities shifted and my childhood dram took a back seat on
-                the list of my priorities - but the feeling of concern for
-                children remains. The drive and passion that I felt when I was
-                young once again rekindled when one of my best friends since
-                college, Gelli asked me to be part of “it’s A Small World
-                Project (IASWP)”. Thus, I instantly and enthusiastically agreed
-                to be part of the project. The road to success of this project
-                will definitely not be a walk in the park , but by having
-                dedicated leader and team working in unison, this project will
-                surely serve its purpose of establish community-based and free
-                Montessori Education available to all children.
-              </p>
+            <div>
+              <img src={Beth} alt="Beth" />
+              <div className="myCarousel">
+                <h3>Maria Beth Saida Reyes-Manlapaz</h3>
+                <h4>Project Planning &#38; Implementation</h4>
+                <p>
+                  When I was in high school, I had a chance to participate in
+                  one of our school organization’s activity where we visited a
+                  home for special children. Since then, I felt and
+                  unexplainable and deep feeling of concern for children and I
+                  envision of having or being part of a special facility for
+                  them… Several years passed, my priorities shifted and my
+                  childhood dram took a back seat on the list of my priorities -
+                  but the feeling of concern for children remains. The drive and
+                  passion that I felt when I was young once again rekindled when
+                  one of my best friends since college, Gelli asked me to be
+                  part of “it’s A Small World Project (IASWP)”. Thus, I
+                  instantly and enthusiastically agreed to be part of the
+                  project. The road to success of this project will definitely
+                  not be a walk in the park , but by having dedicated leader and
+                  team working in unison, this project will surely serve its
+                  purpose of establish community-based and free Montessori
+                  Education available to all children.
+                </p>
+              </div>
             </div>
-          </div>
-          <div>
-            <img src={Vina} alt="Vina" />
-            <div className="myCarousel">
-              <h3>Vina Sison</h3>
-              <h4>Marketing</h4>
-              <p></p>
+            <div>
+              <img src={Vina} alt="Vina" />
+              <div className="myCarousel">
+                <h3>Vina Maria G. Sison</h3>
+                <h4>Marketing</h4>
+                <p>
+                  Vina is a certified Montessori educator and a mom from Manila,
+                  Philippines. She earned her Bachelor of Arts degree in
+                  Psychology from the Ateneo de Manila University in 2008 and
+                  completed her Early Childhood Training (ages 3 to 6) in 2016
+                  from a Montessori Institute of America-certified Montessori
+                  teacher training center in the Philippines. Her year-long
+                  practicum was spent at Menti Assorbenti Child Development
+                  Center in Metro Manila. In 2017, she led an international
+                  primary class at Mengya Montessori Home located in the heart
+                  of Pudong, Shanghai. With a passion for early childhood
+                  education and transformation, Vina believes that it is through
+                  the child that we can better humanity. Without reservations,
+                  Vina said yes to It’s A Small World Project to educate the
+                  child and to educate the world.
+                </p>
+              </div>
             </div>
-          </div>
-          {/* <div className="member-wrapper">
+            <div>
+              <img src={Jihoana} alt="Jihoana" />
+              <div className="myCarousel">
+                <h3>Jhoana Carla C. Vasquez</h3>
+                <h4>Curriculum Development</h4>
+                <p>
+                  I believe that Montessori is the child’s preparation for life
+                  and that the advancement of the human species begins with the
+                  first six years of the child’s life. It’s a Small World
+                  Project brings the Montessori pedagogy to underserved
+                  communities, providing disadvantaged children the chance at
+                  having the early childhood foundation that is necessary for
+                  them to uplift themselves and their community. Being part of
+                  this project allows me to fulfill my belief that Montessori
+                  truly is for every child. This project gives me the
+                  opportunity to guide the child through self-construction, so
+                  that he may take his place in the world, free from the
+                  shackles of poverty.
+                </p>
+              </div>
+            </div>
+            {/* <div className="member-wrapper">
           <div className="member-area-1">
             <img src={Gelli} alt="cheng" width="185px" height="200px" />
             <p className="member1-text">
@@ -187,7 +230,8 @@ class Member extends Component {
             </p>
           </div>
         </div> */}
-        </Carousel>
+          </Carousel>
+        </div>
       </div>
     );
   }
