@@ -144,7 +144,6 @@
   border: 2px solid gray;
   border-radius: 10px;
   position: absolute;
-  /* background-color: blue; */
   display: grid;
   margin-top: 150px;
   margin-left: 5%;
@@ -206,10 +205,11 @@
 /*--------------responsive testimony----------------------*/
 #member {
   height: 1100px;
+  /* background-color: blue; */
 }
 .testimonial-wapper {
   /* margin-top: 60px; */
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .carousel-root {
   width: 90% !important;
@@ -315,6 +315,10 @@
 @media only screen and (max-width: 790px) {
   #member {
     height: 1200px;
+  }
+  .testimonial-wapper {
+    /* margin-top: 60px; */
+    padding-top: 40px;
   }
   .carousel-root {
     outline: 0;
@@ -597,7 +601,6 @@
     border: 2px solid gray;
     border-radius: 10px;
     position: absolute;
-    /* background-color: blue; */
     display: grid;
     margin-top: 150px;
     margin-left: 5%;
@@ -877,7 +880,7 @@
   #vision {
     height: 700px;
     justify-content: center;
-    /* background: red; */
+    background: red;
   }
   .vision-wrapper {
     border: 2px solid gray;
@@ -945,7 +948,7 @@
     height: 1200px;
     justify-content: center;
     padding-top: 0px;
-    background: blue;
+    /* background: blue; */
   }
   .img-target {
     position: absolute;
