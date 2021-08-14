@@ -28,7 +28,7 @@ class Footer extends Component {
           </div>
           <div className="footer3">
             <li>Email: smallworldprojectbyarbitots@gmail.com</li>
-            <li>Powered By Youngjae Jo</li>
+            <li>Powered by Youngjae Jo</li>
           </div>
         </div>
       </div>
