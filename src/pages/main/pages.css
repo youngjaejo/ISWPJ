@@ -880,7 +880,7 @@
   #vision {
     height: 700px;
     justify-content: center;
-    background: red;
+    /* background: red; */
   }
   .vision-wrapper {
     border: 2px solid gray;
