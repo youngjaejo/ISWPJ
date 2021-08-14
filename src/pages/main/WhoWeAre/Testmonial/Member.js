@@ -16,10 +16,17 @@ class Member extends Component {
   render() {
     return (
       <div>
-        <div style={{ width: "100%", textAlign: "center" }}>
-          <h1>Board Of Directors</h1>
-        </div>
         <div className="testimonial-wapper">
+          <h1
+            style={{
+              width: "100%",
+              textAlign: "center",
+              marginBottom: "-40px",
+              marginTop: "100px",
+            }}
+          >
+            Board Of Directors
+          </h1>
           <Carousel
             showArrows={true}
             infiniteLoop={true}
