@@ -51,7 +51,7 @@ class WhatYouCanDo extends Component {
             <ol className="WCYD" start="5">
               <li>Be a partner organization</li>
               <li>Be a volunteer or ambassador</li>
-              <li>Recomand and coordinate a project location</li>
+              <li>Recommend and coordinate a project location</li>
               <li>Follow, share and support our social media pages</li>
             </ol>
             <div className="icons">
