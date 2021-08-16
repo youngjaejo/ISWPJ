@@ -25,7 +25,7 @@ export default function Paypal(props) {
           alert("Transaction complete!");
         },
         onError: (err) => {
-          alert("Error! We will fix it ASAP");
+          alert("Please type more than $0 or We will fix it ASAP");
         },
       })
       .render(paypal.current);

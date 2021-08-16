@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { NavBarItems_WhoWeAre, WhatWeDo_NavItems } from "./NavBarItems";
 import "./Navbar.css";
 import logo from "../IMG/imgOnlyNoBG.png";
+import { BiDonateHeart } from "react-icons/bi";
 class MainNavbar extends Component {
   constructor(props) {
     super(props);
@@ -61,6 +62,17 @@ class MainNavbar extends Component {
             ></i>
           </div>
           <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
+            <div className="regularMenu">
+              <li>
+                <a
+                  href="/whatyoucando"
+                  className="nav-links"
+                  style={{ color: "red" }}
+                >
+                  <BiDonateHeart fontSize="40px" /> Donate
+                </a>
+              </li>
+            </div>
             <div className="dropdown">
               <li>
                 <p className="nav-links">Who We Are</p>
