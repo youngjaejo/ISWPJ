@@ -27,7 +27,7 @@ class Footer extends Component {
             <li>Phone: 510-514-9216</li>
           </div>
           <div className="footer3">
-            <li>Email: smallworldprojectbyarbitots@gmail.com</li>
+            <li>Email: itsasmallworldproj@gmail.com</li>
             <li>Powered by Youngjae Jo</li>
           </div>
         </div>

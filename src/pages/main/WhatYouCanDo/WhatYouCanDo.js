@@ -1,11 +1,16 @@
 import React, { Component } from "react";
 import { scroller } from "react-scroll";
 import { ImInstagram, ImFacebook } from "react-icons/im";
+import { BiDonateHeart } from "react-icons/bi";
+import Paypal from "../../Paypal";
+import Button from "react-bootstrap/Button";
+import CurrencyInput from "react-currency-input-field";
 class WhatYouCanDo extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { value: 1, flag: false, disabled: false };
   }
+
   componentDidMount() {
     scroller.scrollTo(this.props.id, {
       duration: 0,
@@ -64,15 +69,54 @@ class WhatYouCanDo extends Component {
                   &nbsp;Instagram
                 </a>
               </div>
-              <div>
-                <a
-                  href="https://www.facebook.com/itsasmallworldproj/"
-                  alt="facebook"
+
+              <a
+                href="https://www.facebook.com/itsasmallworldproj/"
+                alt="facebook"
+              >
+                <ImFacebook fontSize="40px" />
+                Facebook
+              </a>
+            </div>
+
+            <div style={{ marginTop: "20px" }}>
+              <label>
+                <h2 style={{ color: "red" }}>
+                  Donation Amount
+                  <BiDonateHeart fontSize="40px" />
+                </h2>
+
+                <CurrencyInput
+                  intlConfig={{ locale: "en-US", currency: "USD" }}
+                  disabled={this.state.disabled}
+                  onValueChange={(value, name) =>
+                    this.setState({ value: value })
+                  }
+                  defaultValue={this.state.value}
+                />
+                <Button
+                  onClick={() => this.setState({ flag: true, disabled: true })}
+                  style={{ marginBottom: "5px", fontSize: "19px" }}
                 >
-                  <ImFacebook fontSize="40px" />
-                  Facebook
-                </a>
-              </div>
+                  Pay
+                </Button>
+                <Button
+                  onClick={() =>
+                    this.setState({ flag: false, disabled: false })
+                  }
+                  style={{
+                    marginBottom: "5px",
+                    fontSize: "19px",
+                    marginLeft: "4px",
+                  }}
+                >
+                  Change Amount
+                </Button>
+              </label>
+            </div>
+
+            <div className="paypal-wapper">
+              {this.state.flag && <Paypal amount={this.state.value} />}
             </div>
           </div>
         </div>

@@ -478,16 +478,17 @@
 
 /*-------------------------whatyoucando--------------*/
 #whatyoucando {
-  height: 1100px;
+  height: auto;
   /* background-color: blue; */
   padding-top: 100px;
+  margin-bottom: 30px;
 }
 .container {
   /* background-color: blue; */
   margin-top: 20px;
   border: 2px solid gray;
   border-radius: 10px;
-  height: 810px;
+  height: auto;
   width: auto;
 }
 .title-container {
@@ -511,7 +512,8 @@
   margin-top: 10px;
   font-size: 1.5rem;
   font-family: "Cormorant Garamond", serif;
-  height: auto;
+  min-height: 800px;
+  max-height: auto;
 }
 .WCYD li {
   line-height: 4rem;
@@ -523,6 +525,9 @@
 }
 .icons div {
   float: left;
+}
+.paypal-wapper {
+  width: 50%;
 }
 /*-------------------------media---------------------*/
 @media screen and (min-width: 801px) and (max-width: 1300px) {
@@ -1044,9 +1049,10 @@
 
   /*-------------------------whatyoucando--------------*/
   #whatyoucando {
-    height: 1400px;
+    height: auto;
     padding-top: 100px;
     /* background-color: blue; */
+    margin: 30px;
   }
   .container {
     /* background-color: blue; */
