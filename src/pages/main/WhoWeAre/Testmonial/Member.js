@@ -124,20 +124,20 @@ class Member extends Component {
                 <h3>Vina Maria G. Sison</h3>
                 <h4>Marketing</h4>
                 <p>
-                  Vina is a certified Montessori educator and a mom from Manila,
-                  Philippines. She earned her Bachelor of Arts degree in
-                  Psychology from the Ateneo de Manila University in 2008 and
-                  completed her Early Childhood Training (ages 3 to 6) in 2016
-                  from a Montessori Institute of America-certified Montessori
-                  teacher training center in the Philippines. Her year-long
-                  practicum was spent at Menti Assorbenti Child Development
-                  Center in Metro Manila. In 2017, she led an international
-                  primary class at Mengya Montessori Home located in the heart
-                  of Pudong, Shanghai. With a passion for early childhood
-                  education and transformation, Vina believes that it is through
-                  the child that we can better humanity. Without reservations,
-                  Vina said yes to It’s A Small World Project to educate the
-                  child and to educate the world.
+                  In 2015, I had the privilege of visiting a Montessori
+                  “prepared environment” in a community school in one of the
+                  destitute communities in Metro Manila. After intently
+                  observing this novel setting, I thought this is how children
+                  should be educated—exploring materials at their own pace and
+                  using the hands as a tool to absorb the world. This propelled
+                  me to take a course on the Montessori pedagogy a year later.
+                  And as they say, the rest is history. My passion for early
+                  childhood education and transformation prompted me to say yes
+                  to It’s A Small World Project. I believe that this cause will
+                  allow me to reach more children beyond what my being a mom and
+                  a teacher could impact. It is through the child that we can
+                  better humanity. To educate the child is to educate the world.
+                  It is a small world after all.
                 </p>
               </div>
             </div>

@@ -19,7 +19,7 @@ class WhatYouCanDo extends Component {
       <div id="whatyoucando">
         <div className="container">
           <h3 className="title-container">
-            Email us at <u>smallworldprojectbyarbitots@gmail.com</u> to :
+            Email us at <u>Itsasmallworldproj@gmail.com</u> to :
           </h3>
           <div className="text-container1">
             <ol className="WCYD">
@@ -59,16 +59,15 @@ class WhatYouCanDo extends Component {
                 <a
                   href="https://www.instagram.com/invites/contact/?i=19854js83engt&#38;utm_content=levscij"
                   alt="instagram"
-                  style={{ marginLeft: "40px" }}
                 >
                   <ImInstagram fontSize="40px" />
                   &nbsp;Instagram
                 </a>
-
+              </div>
+              <div>
                 <a
                   href="https://www.facebook.com/itsasmallworldproj/"
                   alt="facebook"
-                  style={{ marginLeft: "20px" }}
                 >
                   <ImFacebook fontSize="40px" />
                   Facebook

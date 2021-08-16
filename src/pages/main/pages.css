@@ -488,6 +488,7 @@
   border: 2px solid gray;
   border-radius: 10px;
   height: 810px;
+  width: auto;
 }
 .title-container {
   margin: 20px;
@@ -519,6 +520,9 @@
 }
 .icons {
   font-size: 30px;
+}
+.icons div {
+  float: left;
 }
 /*-------------------------media---------------------*/
 @media screen and (min-width: 801px) and (max-width: 1300px) {
@@ -1046,7 +1050,7 @@
   }
   .container {
     /* background-color: blue; */
-
+    width: 100%;
     border: 2px solid gray;
     border-radius: 10px;
     height: auto;
@@ -1056,6 +1060,7 @@
       "title"
       "text1"
       "text";
+    /* background-color: blue; */
   }
   .title-container {
     /* background-color: red; */
@@ -1064,6 +1069,9 @@
     font-weight: bold;
     font-family: "Cormorant Garamond", serif;
     grid-area: title;
+  }
+  .title-container u {
+    font-size: 20px;
   }
   .text-container1 {
     /* background-color: red; */
@@ -1086,8 +1094,16 @@
     margin-bottom: 30px;
   }
   .WCYD li {
-    line-height: 4rem;
+    line-height: 2.5rem;
     padding-right: 20px;
+    /* background-color: red; */
+  }
+  .icons div {
+    float: none;
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+  .icons a {
     /* background-color: red; */
   }
 }
