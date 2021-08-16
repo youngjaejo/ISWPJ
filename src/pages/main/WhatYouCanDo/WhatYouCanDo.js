@@ -59,26 +59,23 @@ class WhatYouCanDo extends Component {
               <li>Recommend and coordinate a project location</li>
               <li>Follow, share and support our social media pages</li>
             </ol>
-            <div className="icons">
-              <div>
-                <a
-                  href="https://www.instagram.com/invites/contact/?i=19854js83engt&#38;utm_content=levscij"
-                  alt="instagram"
-                >
-                  <ImInstagram fontSize="40px" />
-                  &nbsp;Instagram
-                </a>
-              </div>
-
+            <div>
               <a
-                href="https://www.facebook.com/itsasmallworldproj/"
-                alt="facebook"
+                href="https://www.instagram.com/invites/contact/?i=19854js83engt&#38;utm_content=levscij"
+                alt="instagram"
+                style={{ float: "left" }}
               >
-                <ImFacebook fontSize="40px" />
-                Facebook
+                <ImInstagram fontSize="40px" />
+                &nbsp;Instagram
               </a>
             </div>
-
+            <a
+              href="https://www.facebook.com/itsasmallworldproj/"
+              alt="facebook"
+            >
+              <ImFacebook fontSize="40px" />
+              Facebook
+            </a>
             <div style={{ marginTop: "20px" }}>
               <label>
                 <h2 style={{ color: "red" }}>
