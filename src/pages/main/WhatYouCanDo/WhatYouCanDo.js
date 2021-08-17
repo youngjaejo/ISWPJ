@@ -76,7 +76,7 @@ class WhatYouCanDo extends Component {
               <ImFacebook fontSize="40px" />
               Facebook
             </a>
-            <div style={{ marginTop: "20px" }}>
+            <div style={{ marginTop: "20px" }} id="donate">
               <label>
                 <h2 style={{ color: "red" }}>
                   Donation Amount

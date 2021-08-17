@@ -43,6 +43,9 @@ class App extends Component {
             <Route path="/whatyoucando">
               <WhatYouCanDo id="whatyoucando" />
             </Route>
+            <Route path="/whatyoucando/donate">
+              <WhatYouCanDo id="donate" />
+            </Route>
           </Switch>
           <Footer />
         </Router>

@@ -65,7 +65,7 @@ class MainNavbar extends Component {
             <div className="regularMenu">
               <li>
                 <a
-                  href="/whatyoucando"
+                  href="/whatyoucando/donate"
                   className="nav-links"
                   style={{ color: "red" }}
                 >
