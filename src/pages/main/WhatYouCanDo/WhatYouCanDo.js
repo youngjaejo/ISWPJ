@@ -57,6 +57,7 @@ class WhatYouCanDo extends Component {
               <li>Be a partner organization</li>
               <li>Be a volunteer or ambassador</li>
               <li>Recommend and coordinate a project location</li>
+              <div id="donate" />
               <li>Follow, share and support our social media pages</li>
             </ol>
             <div>
@@ -76,7 +77,7 @@ class WhatYouCanDo extends Component {
               <ImFacebook fontSize="40px" />
               Facebook
             </a>
-            <div style={{ marginTop: "20px" }} id="donate">
+            <div style={{ marginTop: "20px" }}>
               <label>
                 <h2 style={{ color: "red" }}>
                   Donation Amount
