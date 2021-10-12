@@ -26,7 +26,7 @@ class Vision extends Component {
 
           <div className="vision-text">
             <p className="vision-text p">
-              It's A Small World Project aims to provide accessible
+              It's A Small World Project aims to provide accessible,
               comprehensive and sustainable Montessori programs and facilities
               to disenfranchised communities across the world and connect the
               children using technology as a means of cultural education and

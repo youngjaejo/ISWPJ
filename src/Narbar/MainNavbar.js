@@ -1,5 +1,9 @@
 import React, { Component } from "react";
-import { NavBarItems_WhoWeAre, WhatWeDo_NavItems } from "./NavBarItems";
+import {
+  NavBarItems_WhoWeAre,
+  WhatWeDo_NavItems,
+  WhatYouCanDo,
+} from "./NavBarItems";
 import "./Navbar.css";
 import logo from "../IMG/imgOnlyNoBG.png";
 import { BiDonateHeart } from "react-icons/bi";
@@ -113,11 +117,14 @@ class MainNavbar extends Component {
                 </div>
               </li>
             </div>
-            <div className="regularMenu">
+            <div className="dropdown">
               <li>
-                <a href="/whatyoucando" className="nav-links">
-                  What You Can Do
-                </a>
+                <p className="nav-links">What You Can Do</p>
+                <div className="dropdown-content">
+                  {WhatYouCanDo.map((item, index) => {
+                    return <a href={item.param1}>{item.name}</a>;
+                  })}
+                </div>
               </li>
             </div>
             {/* <li>

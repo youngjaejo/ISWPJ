@@ -27,3 +27,17 @@ export const WhatWeDo_NavItems = [
     name: "Target Projects",
   },
 ];
+
+export const WhatYouCanDo = [
+  {
+    url: "http://localhost:3000/WhatYouCanDo",
+    param1: "/WhatYouCanDo/WaysToHelp",
+    param2: "#target-projects",
+    name: "Ways To Help",
+  },
+  {
+    url: "http://localhost:3000/WhatYouCanDo",
+    param1: "/WhatYouCanDo/application",
+    name: "Project Application",
+  },
+];

@@ -3,12 +3,46 @@ import { scroller } from "react-scroll";
 import { ImInstagram, ImFacebook } from "react-icons/im";
 import { BiDonateHeart } from "react-icons/bi";
 import Paypal from "../../Paypal";
-import Button from "react-bootstrap/Button";
+import { Button, Label, FormGroup, Form, Row, Col } from "react-bootstrap";
 import CurrencyInput from "react-currency-input-field";
+import axios from "axios";
+// import { Table, Container, Input, Label, FormGroup, Form } from "reactstrap";
 class WhatYouCanDo extends Component {
+  emptyitem = {
+    name: "",
+    pNumber: "",
+    email: "",
+    msg: "",
+  };
   constructor(props) {
     super(props);
-    this.state = { value: 1, flag: false, disabled: false };
+    this.state = {
+      value: 1,
+      flag: false,
+      disabled: false,
+      item: this.emptyitem,
+    };
+    this.handleItem = this.handleItem.bind(this);
+    this.handleVcode = this.handleVcode.bind(this);
+  }
+
+  handleItem(event) {
+    this.emptyitem[event.target.name] = event.target.value;
+    console.log(this.emptyitem[event.target.name]);
+  }
+  handleVcode() {
+    axios({
+      method: "post",
+      url: "/web/sendEmail",
+      headers: {},
+      data: {
+        email: this.state.item.email,
+        pNumber: this.state.item.pNumber,
+        name: this.state.item.name,
+        msg: this.state.item.msg,
+      },
+    });
+    alert("Thank you for contact us!");
   }
 
   componentDidMount() {
@@ -21,7 +55,7 @@ class WhatYouCanDo extends Component {
 
   render() {
     return (
-      <div id="whatyoucando">
+      <div id="Application">
         <div className="container">
           <h3 className="title-container">
             Email us at <u>Itsasmallworldproj@gmail.com</u> to :
@@ -117,6 +151,76 @@ class WhatYouCanDo extends Component {
               {this.state.flag && <Paypal amount={this.state.value} />}
             </div>
           </div>
+          {/* <div className="contactUs-container">
+            <h3 style={{ marginTop: "20px" }}>Contact Us</h3>
+            <Form onSubmit={this.handleVcode}> */}
+          {/* <FormGroup>
+                <Label>Full Name</Label>
+                <Input type="text" name="name" onChange={this.handleItem} />
+              </FormGroup>
+              <FormGroup>
+                <Label>Phone Number</Label>
+                <Input type="text" name="pNumber" onChange={this.handleItem} />
+              </FormGroup>
+              <FormGroup>
+                <Label>Email</Label>
+                <Input type="text" name="email" onChange={this.handleItem} />
+              </FormGroup>
+              <FormGroup>
+                <Label>Message</Label>
+                <Input
+                  type="textarea"
+                  name="msg"
+                  onChange={this.handleItem}
+                  id="Text-box-size"
+                />
+              </FormGroup> */}
+
+          {/* <Row className="mb-3">
+                <Form.Group as={Col} controlId="formGridPassword">
+                  <Form.Control
+                    name="name"
+                    onChange={this.handleItem}
+                    placeholder="Full Name"
+                  />
+                </Form.Group>
+
+                <Form.Group as={Col} controlId="formGridPassword">
+                  <Form.Control
+                    name="pNumber"
+                    onChange={this.handleItem}
+                    placeholder="Phone No."
+                  />
+                </Form.Group>
+              </Row>
+              <Row className="mb-3">
+                <Form.Group as={Col}>
+                  <Form.Control
+                    type="email"
+                    name="email"
+                    onChange={this.handleItem}
+                    placeholder="name@example.com"
+                  />
+                </Form.Group>
+              </Row>
+
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlTextarea1"
+              >
+                <Form.Control
+                  as="textarea"
+                  name="msg"
+                  onChange={this.handleItem}
+                  rows={3}
+                />
+              </Form.Group>
+
+              <Button variant="primary" type="submit">
+                Send
+              </Button>
+            </Form>
+          </div> */}
         </div>
       </div>
     );

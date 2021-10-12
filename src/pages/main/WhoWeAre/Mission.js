@@ -16,7 +16,7 @@ class Mission extends Component {
           <div className="mission-text">
             <ol className="missionOL">
               <li>
-                Create a global chain of sustainable facilities in
+                Create a global network of sustainable facilities in
                 disenfranchised communities conducive to children’s discovery of
                 self and environment
               </li>
@@ -33,9 +33,9 @@ class Mission extends Component {
               </li>
 
               <li>
-                Help uplift the quality of life, not only of the children, but
-                of the community as well as the society by offering
-                participation opportunities
+                Uplift the quality of life, not only of the children, but of the
+                community as well as the society by offering participation
+                opportunities
               </li>
             </ol>
           </div>
