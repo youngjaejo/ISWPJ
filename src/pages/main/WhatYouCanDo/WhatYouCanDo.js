@@ -111,8 +111,15 @@ class WhatYouCanDo extends Component {
               <ImFacebook fontSize="40px" />
               Facebook
             </a>
-            <div style={{ marginTop: "20px" }}>
-              <label>
+            <div style={{ marginTop: "40px" }}>
+              <br />
+
+              <h2 style={{ color: "red" }}>Donate To</h2>
+              <p>Bank Name: US Bank</p>
+              <p>Account Name: It's A Small World Project</p>
+              <p>Account Number: 157524014022</p>
+              <p>Routing Number: 121122676</p>
+              {/* <label>
                 <h2 style={{ color: "red" }}>
                   Donation Amount
                   <BiDonateHeart fontSize="40px" />
@@ -144,12 +151,12 @@ class WhatYouCanDo extends Component {
                 >
                   Change Amount
                 </Button>
-              </label>
+              </label> */}
             </div>
 
-            <div className="paypal-wapper">
+            {/* <div className="paypal-wapper">
               {this.state.flag && <Paypal amount={this.state.value} />}
-            </div>
+            </div> */}
           </div>
           {/* <div className="contactUs-container">
             <h3 style={{ marginTop: "20px" }}>Contact Us</h3>

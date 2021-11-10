@@ -13,6 +13,7 @@
     "react-currency-input-field": "^3.4.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
+    "react-paypal-button-v2": "^2.6.3",
     "react-responsive-carousel": "^3.2.20",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
@@ -42,6 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://localhost:8080"
+  }
 }
